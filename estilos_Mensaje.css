@@ -1,0 +1,86 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #f0c27b, #4b1248);
+  animation: backgroundAnimation 20s infinite alternate;
+  transition: background-color 0.3s;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.container {
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  background: linear-gradient(to right, #d0addf, #e0e7ec);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  animation: fadeInAnimation 1s ease-in-out;
+  -webkit-animation: fadeInAnimation 1s ease-in-out;
+}
+
+.message {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.image {
+  margin: 30px auto;
+  max-width: 60%;
+}
+
+.centered-image {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.centered-image:hover {
+  transform: scale(1.05);
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

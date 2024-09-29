@@ -1,0 +1,89 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #9fd6bc, #1a9065);
+  animation: backgroundAnimation 20s infinite alternate;
+  transition: background-color 0.3s;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.container {
+  max-width: 90%;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  animation: fadeInAnimation 1s ease-in-out;
+}
+
+.content {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.button-container {
+  text-align: center; /* Centra el botón */
+  margin-top: 20px; /* Espaciado superior */
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.button:focus {
+  outline: none; /* Elimina el contorno al enfocar */
+}
+
+
+
+
+iframe {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  transition: transform 0.3s;
+}
+
+iframe:hover {
+  transform: scale(1.05);
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

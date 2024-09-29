@@ -1,0 +1,177 @@
+body {
+    font-family: 'Cambria', sans-serif;
+    /*Cambialafuentedetodalapágina*/margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #c6bbdb, #cca1af);
+    animation: backgroundAnimation 20s infinite alternate;
+    -webkit-animation: backgroundAnimation 20s infinite alternate;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: fadeInAnimation 1s ease-in-out;
+}
+
+#title {
+    font-size: 3rem; /* Tamaño de la fuente */
+    color: #100c22; /* Color del texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+    margin-bottom: 20px; /* Espacio inferior para separarlo del siguiente elemento */
+    padding: 10px; /* Espaciado interno para el texto */
+    background: linear-gradient(to right, #75908e, #236e3b);
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    animation: fadeInAnimation 1.5s ease-in-out; /* Animación de aparición */
+}
+
+/* Estilo de animación */
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.highlight {
+    color: #ff6f61;
+}
+
+.envelope {
+    width: 820px;
+    height: 100px;
+    background-color: #f9d6c1;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto; /* Centra horizontalmente */
+    animation: fadeInAnimation 2s ease-in-out;
+    border-radius: 10px; /* Agrega bordes redondeados al sobre */
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.1); /* Agrega sombra al sobre */
+}
+
+/* Envelope message */
+.envelope::after {
+    content: 'Haz clic aquí Francheskaaa, estoy esperando <3 :) (2 veces si no funciona)';
+    position: absolute;
+    font-size: 1.5rem; /* Aumenta el tamaño de la fuente */
+    color: #3627b7; /* Cambia el color del texto */
+    bottom: 50%; /* Ajusta la posición vertical */
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-weight: bold; /* Agrega negrita */
+    white-space: nowrap; /* Evita saltos de línea */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Agrega sombra al texto */
+    animation: fadeInAnimation 1.5s ease-in-out; /* Agrega animación de aparición */
+}
+
+/* Animación de aparición */
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+.envelope-top,
+.envelope-bottom {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    position: absolute;
+}
+
+.envelope-top {
+    border-bottom: 30px solid #f9d6c1;
+    top: 0;
+}
+
+.envelope-bottom {
+    border-top: 30px solid #f9d6c1;
+    bottom: 0;
+}
+
+.paper {
+    width: 80%;
+    max-width: 800px;
+    border-radius:15px;
+    background-color: #e2b3b3;
+    /*Cambiaelcolordefondo*/margin: 20px auto;
+    border: 2px solid #ccc;
+    padding: 10px;
+    display: none;
+    animation: fadeInAnimation 2.5s ease-in-out;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    -ms-border-radius:15px;
+    -o-border-radius:15px;
+}
+
+.centered-image {
+    display: block;
+    margin: 10px auto; /* Centrar horizontalmente*/
+    max-width: 240px; /*Ancho*/
+    height: auto;
+}
+
+
+.paper-text {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold; /* Agrega negrita */
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.boton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+}
+
+.boton:hover {
+    background-color: #45a049;
+}
+
+
